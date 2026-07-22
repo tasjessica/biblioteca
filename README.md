@@ -24,7 +24,7 @@ O sistema permite cadastrar livros, controlar a quantidade disponível e o valor
 
 Este projeto foi feito como prática de Java para reforçar conceitos básicos de orientação a objetos, entre eles:
 
-- Conceitos de orientação a objetos: classes, encapsulamento (atributos privados com getters e setters), construtores (com e sem parâmetros), ArrayList (para armazenar coleções de objetos) e manipulação de coleções
+- Classes, encapsulamento (atributos privados com getters e setters), construtores, ArrayList e manipulação de coleções
 - Criação de classes e separação de responsabilidades
 - Laços de repetição (for-each e while) para percorrer listas e controlar o menu
 - Leitura de dados do usuário com Scanner
