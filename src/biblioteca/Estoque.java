@@ -22,4 +22,31 @@ public class Estoque {
             System.out.println("Livro: " + produto.getLivro() + " | Quantidade: " + produto.getQuantidade() + " | Valor: " + produto.getValor());
         }
     }
+
+    public Produto buscarProduto(String nomeBuscado){
+        for (Produto produto : produtos){
+            if (produto.getLivro().equals(nomeBuscado)){
+                return produto;
+            }
+        }
+        return null;
+    }
+
+    public void atualizarQuantidade(String nomeBuscado, int novaQuantidade){
+        Produto produto = buscarProduto(nomeBuscado);
+        if (produto != null){
+            produto.setQuantidade(novaQuantidade);
+        } else {
+            System.out.println("Livro não encontrado.");
+        }
+    }
+
+    public void removerProduto(String nomeBuscado){
+        Produto produto = buscarProduto(nomeBuscado);
+        if (produto != null){
+            produtos.remove(produto);
+        } else {
+            System.out.println("Livro não encontrado.");
+        }
+    }
 }
